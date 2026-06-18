@@ -1,0 +1,13 @@
+{
+  "name": "stride-bpefs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "STRIDE 2-page executive summary (A4) - HTML/CSS built for PDF export",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}
