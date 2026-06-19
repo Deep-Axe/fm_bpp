@@ -140,30 +140,64 @@
         <div class="exit-option">
           <div class="exit-head">
             <strong>Option A</strong>
-            <b>15.3x / ~35% IRR</b>
+            <b>EUR 30.6M cashout</b>
           </div>
-          <p>Follow-on buy-in path: investor can put in additional capital at Year 5, then sell down through the later exit window.</p>
-          <div class="exit-track">
-            <span>Invest more</span>
-            <i></i>
-            <span>Sell-down window</span>
-            <i></i>
-            <span>EUR 30.6M modeled cash-out</span>
-          </div>
+          <p>15.3x headline return on the EUR 2.0M seed check, with ~35% modeled IRR. Assumes a EUR 7.5M follow-on buy-in at the end of Year 5 before the sell-down window.</p>
+          <svg class="cashout-chart option-a-chart" viewBox="0 0 330 112" role="img" aria-label="Option A cashout by year: zero in Year 6, zero in Year 7, 7 million in Year 8, 8.6 million in Year 9, and 15 million in Year 10">
+            <line x1="18" y1="84" x2="315" y2="84" />
+            <g class="bars">
+              <rect x="30" y="83" width="34" height="1" />
+              <rect x="91" y="83" width="34" height="1" />
+              <rect x="152" y="43" width="34" height="41" />
+              <rect x="213" y="34" width="34" height="50" />
+              <rect x="274" y="0" width="34" height="84" />
+            </g>
+            <g class="values">
+              <text x="47" y="76">0</text>
+              <text x="108" y="76">0</text>
+              <text x="169" y="36">7.0</text>
+              <text x="230" y="27">8.6</text>
+              <text x="291" y="12">15.0</text>
+            </g>
+            <g class="years">
+              <text x="47" y="103">Y6</text>
+              <text x="108" y="103">Y7</text>
+              <text x="169" y="103">Y8</text>
+              <text x="230" y="103">Y9</text>
+              <text x="291" y="103">Y10</text>
+            </g>
+          </svg>
         </div>
         <div class="exit-option">
           <div class="exit-head">
             <strong>Option B</strong>
-            <b>7.9x / ~27% IRR</b>
+            <b>EUR 15.775M cashout</b>
           </div>
-          <p>Staggered exit path: no follow-on investment; promoters buy back investor equity across the exit window.</p>
-          <div class="exit-track">
-            <span>No follow-on</span>
-            <i></i>
-            <span>Promoter buyback</span>
-            <i></i>
-            <span>EUR 15.775M modeled cash-out</span>
-          </div>
+          <p>7.9x return on the EUR 2.0M seed check, with ~27% modeled IRR. No follow-on capital; promoters buy back the stake across Years 6-10.</p>
+          <svg class="cashout-chart option-b-chart" viewBox="0 0 330 112" role="img" aria-label="Option B cashout by year: 1.5 million in Year 6, 1.86 million in Year 7, 2.115 million in Year 8, 2.58 million in Year 9, and 7.72 million in Year 10">
+            <line x1="18" y1="84" x2="315" y2="84" />
+            <g class="bars">
+              <rect x="30" y="68" width="34" height="16" />
+              <rect x="91" y="64" width="34" height="20" />
+              <rect x="152" y="61" width="34" height="23" />
+              <rect x="213" y="56" width="34" height="28" />
+              <rect x="274" y="0" width="34" height="84" />
+            </g>
+            <g class="values">
+              <text x="47" y="61">1.5</text>
+              <text x="108" y="57">1.86</text>
+              <text x="169" y="54">2.115</text>
+              <text x="230" y="49">2.58</text>
+              <text x="291" y="12">7.72</text>
+            </g>
+            <g class="years">
+              <text x="47" y="103">Y6</text>
+              <text x="108" y="103">Y7</text>
+              <text x="169" y="103">Y8</text>
+              <text x="230" y="103">Y9</text>
+              <text x="291" y="103">Y10</text>
+            </g>
+          </svg>
         </div>
       </section>
 
@@ -203,10 +237,12 @@
       </section>
 
       <section class="kpi-strip">
-        <div><span>Revenue CAGR</span><b>58%</b></div>
-        <div><span>FY5 PAT</span><b>4.5M</b></div>
-        <div><span>FY5 FCF</span><b>3.1M</b></div>
-        <div><span>Gross margin</span><b>44%</b></div>
+        <div class="kpi-strip-inner">
+          <div><span>Revenue CAGR</span><b>58%</b></div>
+          <div><span>FY5 PAT</span><b>4.5M</b></div>
+          <div><span>FY5 FCF</span><b>3.1M</b></div>
+          <div><span>Gross margin</span><b>44%</b></div>
+        </div>
       </section>
 
       <section class="unit-panel">
@@ -216,7 +252,7 @@
           <i></i>
           <div><span>Unit cost</span><b>EUR 90k</b><small>Racecar production cost</small></div>
           <i></i>
-          <div><span>Gross profit per team</span><b>EUR 35k</b><small>28% before central league overheads</small></div>
+          <div><span>Gross profit earned per team</span><b>EUR 35k</b><small>28% before central league overheads</small></div>
         </div>
       </section>
 
@@ -245,9 +281,11 @@
 
       <section class="capital-panel">
         <div class="section-title">Existing Capital Base</div>
-        <div class="capital-row"><span>Parent-backed pre-seed commitment</span><b>EUR 8.0M</b></div>
-        <div class="capital-row"><span>Pre-launch setup already allocated</span><b>EUR 1.49M</b></div>
-        <div class="capital-row"><span>Remaining parent-backed capital</span><b>EUR 6.51M</b></div>
+        <div class="capital-rows">
+          <div class="capital-row"><span>Parent-backed pre-seed commitment</span><b>EUR 8.0M</b></div>
+          <div class="capital-row"><span>R&amp;D capital already allocated</span><b>EUR 1.49M</b></div>
+          <div class="capital-row"><span>Remaining parent-backed capital</span><b>EUR 6.51M</b></div>
+        </div>
       </section>
     </main>
   </section>
