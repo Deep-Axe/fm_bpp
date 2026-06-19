@@ -49,10 +49,10 @@ body {
 }
 
 .topline {
-  height: 16mm;
+  height: 24mm;
   border-bottom: 1px solid var(--line);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -60,7 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2.1mm;
+  gap: 2.6mm;
   color: var(--muted);
   font-size: 8px;
   text-transform: uppercase;
@@ -69,8 +69,11 @@ body {
 }
 .meta-line span:first-child {
   color: var(--cream);
-  font-size: 13px;
-  letter-spacing: .1em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-transform: none;
 }
 .meta-line span:last-child {
   display: flex;
@@ -85,8 +88,8 @@ body {
   transform: rotate(45deg);
 }
 .fm-logo {
-  height: 12mm;
-  max-width: 45mm;
+  height: 22mm;
+  max-width: 75mm;
   width: auto;
   object-fit: contain;
 }
@@ -128,11 +131,11 @@ h1, .display {
 
 /* Page 1 */
 .p1-main {
-  height: 260mm;
+  height: 251mm;
   display: grid;
-  grid-template-rows: 75mm 21mm 78mm 67mm;
-  row-gap: 5mm;
-  padding-top: 6mm;
+  grid-template-rows: 75mm 21mm 78mm 66mm;
+  row-gap: 3mm;
+  padding-top: 2mm;
 }
 
 .hero-block {
@@ -410,11 +413,11 @@ h1, .display {
 
 /* Page 2 */
 .p2-grid {
-  height: 256mm;
-  padding-top: 4mm;
+  height: 248mm;
+  padding-top: 1mm;
   display: grid;
   grid-template-columns: 112mm 1fr;
-  grid-template-rows: 16mm 34mm 28mm 50mm 22mm 34mm 36mm;
+  grid-template-rows: 16mm 31mm 36mm 44mm 22mm 34mm 38mm;
   gap: 4.5mm 8mm;
   position: relative;
 }
@@ -432,6 +435,7 @@ h1, .display {
   align-items: flex-end;
   justify-content: flex-start;
   gap: 8mm;
+  margin-top: 4mm;
 }
 .numbers-title h1 {
   font-size: 43px;
@@ -499,14 +503,14 @@ h1, .display {
 }
 .exit-panel {
   grid-column: 2;
-  grid-row: 5 / span 3;
+  grid-row: 4 / span 4;
   border-top: 1px solid var(--line);
   padding: 4mm 0 0 6mm;
   margin-top: -2mm;
   display: grid;
   grid-template-columns: 1fr;
-  align-content: start;
-  gap: 4mm;
+  align-content: space-between;
+  gap: 3mm;
 }
 .exit-panel .section-title {
   grid-column: 1;
@@ -524,17 +528,28 @@ h1, .display {
 .exit-head strong {
   color: var(--red);
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 16px;
+  font-size: 19px;
   display: block;
   white-space: nowrap;
 }
 .exit-head b {
   color: var(--cream);
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 13px;
+  font-size: 15px;
   font-variant-numeric: tabular-nums;
   text-align: right;
   line-height: 1.05;
+}
+.exit-roi {
+  margin-right: auto;
+  margin-left: 3mm;
+  color: var(--red);
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 .exit-option p {
   margin-top: 1.2mm;
@@ -545,9 +560,9 @@ h1, .display {
 }
 .cashout-chart {
   width: 100%;
-  height: 24mm;
+  height: 46mm;
   display: block;
-  margin-top: 2.1mm;
+  margin-top: 2.4mm;
   overflow: visible;
 }
 .cashout-chart line {
@@ -570,12 +585,12 @@ h1, .display {
 .cashout-chart .values text {
   fill: var(--cream);
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
 }
 .cashout-chart .years text {
   fill: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: .08em;
 }
@@ -611,7 +626,7 @@ h1, .display {
   font-variant-numeric: tabular-nums;
 }
 .finance-table th, .finance-table td {
-  padding: 2.8mm 2mm;
+  padding: 1.4mm 2mm;
   border-bottom: 1px solid var(--line-soft);
   text-align: right;
 }
@@ -640,7 +655,7 @@ h1, .display {
 
 .line-card {
   grid-column: 2;
-  grid-row: 3 / span 2;
+  grid-row: 3;
   border-top: 1px solid var(--line);
   padding: 2.5mm 0 0 6mm;
   align-self: start;
@@ -648,9 +663,9 @@ h1, .display {
 }
 .line-card svg {
   width: 100%;
-  height: 32mm;
+  height: 25mm;
   display: block;
-  margin-top: 2.5mm;
+  margin-top: 2mm;
 }
 .line-card p {
   color: var(--cream-2);
@@ -782,8 +797,8 @@ h1, .display {
   align-items: flex-start;
 }
 .donut {
-  width: 27mm;
-  height: 27mm;
+  width: 25mm;
+  height: 25mm;
   border-radius: 50%;
   margin: 0;
   position: relative;
@@ -792,7 +807,7 @@ h1, .display {
 .donut::after {
   content: "";
   position: absolute;
-  inset: 7.5mm;
+  inset: 7mm;
   border-radius: 50%;
   background: var(--black);
   border: 1px solid var(--line-soft);
